@@ -1,4 +1,45 @@
-span{
-    display: flex; 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  nav {
+    background-color: #333; 
+    color: #fff; 
     
-}
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  li {
+    margin: 20px;
+    text-align: right;
+   
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff; 
+  }
+  
+  
+  h1 {
+    
+    margin-top: 20px;
+    text-align: center;
+    font-size: 6cm;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
