@@ -1,13 +1,13 @@
 import './index.css';
 import { Link } from 'react-router-dom';
 
-function Home() {
+function Consulta() {
   return (    
     <div>
 
-        <nav>
+      <h1>.Ease</h1>
 
-        <h1>.Ease</h1>
+        <nav>
 
         <ul>
 
@@ -31,4 +31,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Consulta;
