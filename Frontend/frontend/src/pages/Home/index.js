@@ -5,9 +5,9 @@ function Home() {
   return (    
     <div>
 
-      <h1>.Ease</h1>
-
         <nav>
+
+        <h1>.Ease</h1>
 
         <ul>
 
