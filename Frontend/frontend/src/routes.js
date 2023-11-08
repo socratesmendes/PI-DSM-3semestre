@@ -8,7 +8,7 @@ function RoutesApp (){
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Cadastro />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/vendas" element={<Vendas />} />
                 <Route path="/consulta" element={<Consulta />} />
