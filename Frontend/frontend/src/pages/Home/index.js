@@ -4,29 +4,24 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (    
     <div>
+      
 
-        <nav>
-
-        <h1>.Ease</h1>
-
+      <div className='sidemenu'>
         <ul>
-
           <li>
             <Link to="/">Home</Link>
           </li>
-
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/cadastro">Cadastro</Link>
           </li>
-          
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/consulta">Consulta</Link>
           </li>
-
+          <li>
+            <Link to="/vendas">Vendas</Link>
+          </li>
         </ul>
-
-      </nav>
-      
+      </div>
     </div>
   );
 }

@@ -1,14 +1,17 @@
+/* Reset some default styles and set the font-family */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Styles for the navigation bar */
 nav {
-  background-color: blue; /* Definindo a cor azul para a barra de navegação */
+  background-color: blue;
   color: #fff;
 }
 
+/* Styles for the unordered list in the navigation bar */
 ul {
   list-style: none;
   padding: 0;
@@ -16,20 +19,24 @@ ul {
   justify-content: center;
 }
 
+/* Styles for list items in the navigation bar */
 li {
   margin: 0 20px;
 }
 
+/* Styles for links in the navigation bar */
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
+/* Styles for headings */
 h1 {
   text-align: left;
   font-size: 2em;
 }
 
+/* Styles for paragraphs */
 p {
   text-align: left;
 }

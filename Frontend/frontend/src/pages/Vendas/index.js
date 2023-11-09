@@ -5,9 +5,9 @@ function Venda() {
   return (    
     <div>
 
-      <h1>.Ease</h1>
+      <nav>
 
-        <nav>
+        <h1>.Ease</h1>
 
         <ul>
 
@@ -16,17 +16,21 @@ function Venda() {
           </li>
 
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/cadastro">Cadastro</Link>
           </li>
-          
+
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/consulta">Consulta</Link>
+          </li>
+
+          <li>
+            <Link to="/vendas">Vendas</Link>
           </li>
 
         </ul>
 
       </nav>
-      
+
     </div>
   );
 }
