@@ -1,9 +1,8 @@
-const { PrismaClient } = require('@prisma/client')
-
-const prisma = new PrismaClient()
+const prisma = require('../config/prisma.js')
 
 class ProdutoService{
-    constructor(modelName){
+    constructor(modelName, prismaInstance){
+        // this.prisma = prismaInstance
         this.modelName = modelName
         // const prisma = new PrismaClient()
         // this.prisma = prisma
@@ -11,7 +10,7 @@ class ProdutoService{
 
     async findAll(req){
         console.log(this.modelName)
-        const result = await prisma[this.modelName].findMany(options)
+        const result = await prisma[this.modelName].findMany()
 
         return {...result}
     }

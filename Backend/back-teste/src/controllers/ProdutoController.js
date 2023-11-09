@@ -1,8 +1,9 @@
+const prisma = require('../config/prisma.js')
 const ProdutoService = require('../services/ProdutoService.js')
 
 class ProdutoController {
     constructor(){
-        this.service = new ProdutoService('Produto')
+        this.service = new ProdutoService('Produto', prisma)
     }
 
     async findAll(req, res){
