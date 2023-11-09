@@ -1,21 +1,10 @@
-const express = require('express');
+import express, { json, urlencoded } from "express";
+import cookieParser from "cookie-parser";
+import logger from "morgan";
 
-const app = express();
-
-app.use(json());
-app.use(urlencoded({ extended: true }));
-
-// Restante do seu código usando o Express...
-
-app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000');
-});
-
-
-const indexRouter = require('./routes/index.js');
-const usersRouter = require('./routes/users.js');
-const produtoRouter = require('./routes/produto.js');
-
+import indexRouter from "./routes/index.js";
+import usersRouter from "./routes/users.js";
+import produtoRouter from "./routes/produto.js";
 
 const app = express();
 
