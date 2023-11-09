@@ -1,0 +1,18 @@
+// controllers/categoriaController.js
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+// Função para listar todas as categorias
+const listarCategorias = async (req, res) => {
+  try {
+    const categorias = await prisma.categoria.findMany();
+    res.json(categorias);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Erro ao listar categorias.' });
+  }
+};
+
+module.exports = {
+  listarCategorias,
+};
