@@ -28,7 +28,8 @@ body {
   
   a {
     text-decoration: none;
-    color: #fff; 
+
+    color: #0729e9; 
   }
   
   
@@ -36,10 +37,14 @@ body {
     
     margin-top: 20px;
     text-align: center;
-    font-size: 6cm;
+    font-size: 2cm;
   }
   
   p {
     text-align: center;
   }
-  
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
