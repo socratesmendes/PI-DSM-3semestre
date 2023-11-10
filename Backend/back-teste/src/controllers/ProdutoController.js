@@ -9,6 +9,7 @@ class ProdutoController {
     async findAll(req, res){
         try {
             const result = await this.service.findAll(req)
+            console.log(this.modelName)
             res.status(200).send({...result})
         } catch (e) {
             res.status(400).send('Erro ao buscar produtos')

@@ -9,7 +9,6 @@ class ProdutoService{
     }
 
     async findAll(req){
-        console.log(this.modelName)
         const result = await prisma[this.modelName].findMany()
 
         return {...result}
