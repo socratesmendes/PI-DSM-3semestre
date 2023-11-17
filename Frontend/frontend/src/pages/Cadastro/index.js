@@ -68,37 +68,97 @@ function Cadastro() {
 
       <div className='buttons'>
 
-        <button onClick={handleFormProduto}>Produto</button>
+      <button onClick={handleFormProduto}>Produto</button>
+
         {formProduto && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+            <label>
+              Nome:
+              <input type="text" />
+            </label>
+
+            <label>
+              Preço:
+              <input type="text" />
+            </label>
+
+            <label>
+              Tipo:
+              <input type="text" />
+            </label>
+
+            <label>
+              Categoria:
+              <input type="text" />
+            </label>
+
+            <label>
+              Cor:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Cadastrar</button>
+            
           </form>
         )}
 
-        <button onClick={handleFormCliente}>Cliente</button>
-        {formCliente && (
-          <form>
+      <button onClick={handleFormCliente}>Cliente</button>
+
+      {formCliente && (
+        <form>
+
+          <label>
+            Nome:
             <input type="text" />
-            <button>Enviar</button>
-          </form>
-        )}
+          </label>
+
+          <label>
+            CNPJ:
+            <input type="text" />
+          </label>
+
+          <label>
+            Telefone:
+            <input type="text" />
+          </label>
+
+          <label>
+            E-mail:
+            <input type="text" />
+          </label>
+
+          <button type="submit">Cadastrar</button>
+
+        </form>
+      )}
 
         <button onClick={handleFormCategoria}>Categoria</button>
         {formCategoria && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+
+            <label>
+              Nome:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Cadastrar</button>
+
           </form>
         )}
 
         <button onClick={handleFormTipo}>Tipo</button>
         {formTipo && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+
+            <label>
+              Nome:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Cadastrar</button>
+
           </form>
-        )}
+          )}
 
       </div>
 

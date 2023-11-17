@@ -4,40 +4,30 @@ import { Link } from 'react-router-dom';
 
 function Consulta() {
 
-  const[formProduto, setFormProduto] = useState(false)
-  const[formCliente, setFormCliente] = useState(false)
-  const[formCategoria, setFormCategoria] = useState(false)
-  const[formTipo, setFormTipo] = useState(false)
+  const [formProduto, setFormProduto] = useState(false)
+  const [formCliente, setFormCliente] = useState(false)
+  const [formVenda, setFormVenda] = useState(false)
 
   const handleFormProduto = () => {
     setFormProduto(!formProduto);
     setFormCliente(false);
-    setFormCategoria(false);
-    setFormTipo(false);
+    setFormVenda(false);
   }
 
   const handleFormCliente = () => {
     setFormProduto(false);
     setFormCliente(!formCliente);
-    setFormCategoria(false);
-    setFormTipo(false);
+    setFormVenda(false);
   }
 
-  const handleFormCategoria = () => {
+  const handleFormVenda = () => {
     setFormProduto(false);
     setFormCliente(false);
-    setFormCategoria(!formCategoria);
-    setFormTipo(false);
-  }
-
-  const handleFormTipo = () => {
-    setFormProduto(false);
-    setFormCliente(false);
-    setFormCategoria(false);
-    setFormTipo(!formTipo);
+    setFormVenda(!formVenda);
   }
 
   return (    
+
     <div>
 
       <nav>
@@ -69,41 +59,112 @@ function Consulta() {
       <div className='buttons'>
 
         <button onClick={handleFormProduto}>Produto</button>
+
         {formProduto && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+
+            <label>
+              Nome:
+              <input type="text" />
+            </label>
+
+            <label>
+              Preço:
+              <input type="text" />
+            </label>
+
+            <label>
+              Tipo:
+              <input type="text" />
+            </label>
+
+            <label>
+              Categoria:
+              <input type="text" />
+            </label>
+
+            <label>
+              Cor:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Consultar</button>
+            
           </form>
         )}
 
         <button onClick={handleFormCliente}>Cliente</button>
+
         {formCliente && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+
+            <label>
+              Nome:
+              <input type="text" />
+            </label>
+
+            <label>
+              CNPJ:
+              <input type="text" />
+            </label>
+
+            <label>
+              Telefone:
+              <input type="text" />
+            </label>
+
+            <label>
+              E-mail:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Consultar</button>
+
           </form>
         )}
 
-        <button onClick={handleFormCategoria}>Categoria</button>
-        {formCategoria && (
-          <form>
-            <input type="text" />
-            <button>Enviar</button>
-          </form>
-        )}
+        <button onClick={handleFormVenda}>Vendas</button>
 
-        <button onClick={handleFormTipo}>Tipo</button>
-        {formTipo && (
+        {formVenda && (
           <form>
-            <input type="text" />
-            <button>Enviar</button>
+
+            <label>
+              Cliente:
+              <input type="text" />
+            </label>
+
+            <label>
+              Produto:
+              <input type="text" />
+            </label>
+
+            <label>
+              Data do Pedido:
+              <input type="text" />
+            </label>
+
+            <label>
+              Código da Venda:
+              <input type="text" />
+            </label>
+
+            <label>
+              Preço:
+              <input type="text" />
+            </label>
+
+            <button type="submit">Consultar</button>
+
           </form>
+
         )}
 
       </div>
 
     </div>
+    
   );
+
 }
 
 export default Consulta;
