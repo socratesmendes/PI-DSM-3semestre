@@ -4,11 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1; /* Cor de fundo cinza claro */
 }
 
 nav {
   background-color: #3498db; /* Cor de fundo azul */
-  padding: 10px;
+  padding: 20px;
   color: #fff; /* Cor do texto branco */
   display: flex;
   justify-content: space-between;
@@ -27,7 +28,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -40,34 +41,54 @@ nav ul li a {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 button {
   background-color: #3498db; /* Cor de fundo azul */
   color: #fff; /* Cor do texto branco */
-  padding: 10px;
-  margin: 5px;
+  padding: 15px;
+  margin: 10px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9; /* Cor de fundo azul mais escura no hover */
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 20px;
+  background-color: #fff; /* Cor de fundo branco */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 input {
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #3498db; /* Cor da borda azul */
   border-radius: 4px;
+  font-size: 1em;
 }
 
 button[type="submit"] {
   background-color: #2ecc71; /* Cor de fundo verde para o botão de submit */
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60; /* Cor de fundo verde mais escura no hover */
 }
