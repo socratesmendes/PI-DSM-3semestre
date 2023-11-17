@@ -21,7 +21,8 @@ function Venda() {
 
   };
 
-  return (
+  return (    
+
     <div>
 
       <nav>
@@ -51,13 +52,15 @@ function Venda() {
       </nav>
 
       <div className='venda-content'>
+        
         <h2>Venda</h2>
 
         <label>
-          Categoria: 
-                   
+          Categoria:
+
           <select>
             <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
           </select>
 
         </label>
@@ -67,6 +70,7 @@ function Venda() {
 
           <select>
             <option value="tipo1">Tipo 1</option>
+            <option value="tipo2">Tipo 2</option>
           </select>
 
         </label>
@@ -76,6 +80,7 @@ function Venda() {
 
           <select onChange={(e) => handleProdutoChange(e.target.value)}>
             <option value="produto1">Produto 1</option>
+            <option value="produto2">Produto 2</option>
           </select>
 
         </label>
@@ -84,6 +89,7 @@ function Venda() {
           <div>
 
             <h3>Atributos do Produto:</h3>
+
             <p>Categoria: {selectedProduto.categoria}</p>
             <p>Tipo: {selectedProduto.tipo}</p>
             <p>Preço: R${selectedProduto.preco.toFixed(2)}</p>
@@ -100,8 +106,9 @@ function Venda() {
       </div>
 
     </div>
-    
+
   );
+  
 }
 
 export default Venda;
