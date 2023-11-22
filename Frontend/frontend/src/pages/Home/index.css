@@ -1,42 +1,53 @@
-/* Reset some default styles and set the font-family */
+/* Home.css */
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Cor de fundo cinza claro */
 }
 
-/* Styles for the navigation bar */
-nav {
-  background-color: blue;
-  color: #fff;
-}
-
-/* Styles for the unordered list in the navigation bar */
-ul {
-  list-style: none;
-  padding: 0;
+.sidemenu {
+  background-color: #3498db; /* Cor de fundo azul */
+  height: 100vh; /* 100% da altura da viewport */
+  width: 200px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-/* Styles for list items in the navigation bar */
-li {
-  margin: 0 20px;
+.sidemenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-/* Styles for links in the navigation bar */
-a {
+.sidemenu li {
+  margin-bottom: 20px;
+}
+
+.sidemenu li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff; /* Cor do texto branco */
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Styles for headings */
-h1 {
-  text-align: left;
-  font-size: 2em;
+.sidemenu li a:hover {
+  color: #ecf0f1; /* Cor do texto branco mais claro no hover */
 }
 
-/* Styles for paragraphs */
-p {
-  text-align: left;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: auto; /* Isso mantém a proporção da imagem */
 }

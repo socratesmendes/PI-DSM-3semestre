@@ -1,45 +1,99 @@
+/* Consulta.css */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Cor de fundo cinza claro */
+}
 
-  nav {
-    background-color: #333; 
-    color: #fff; 
-    
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    
-  }
-  
-  li {
-    margin: 20px;
-    text-align: right;
-   
-    
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff; 
-  }
-  
-  
-  h1 {
-    
-    margin-top: 20px;
-    text-align: center;
-    font-size: 2cm;
-  }
-  
-  p {
-    text-align: center;
-  }
-  
+nav {
+  background-color: #3498db; /* Cor de fundo azul */
+  padding: 20px;
+  color: #fff; /* Cor do texto branco */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Cor do texto branco */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.buttons {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  background-color: #3498db; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: #2980b9; /* Cor de fundo azul mais escura no hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #fff; /* Cor de fundo branco */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra mais perceptível */
+}
+
+label {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  color: #555; /* Cor do texto cinza escuro */
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Cor da borda cinza claro */
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+button[type="submit"] {
+  background-color: #27ae60; /* Cor de fundo verde para o botão de submit */
+  color: #fff; /* Cor do texto branco */
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #219d54; /* Cor de fundo verde mais escura no hover */
+}
