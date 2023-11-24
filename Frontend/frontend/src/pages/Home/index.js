@@ -6,7 +6,7 @@ function Home() {
     <>
       <div className='sidemenu'>
         <div className='logo-container'>
-          <img src="/images/l ogo.png" alt="Logo do Projeto" className='logo' />
+          <img src="../imagens/logo.png" alt="Logo do Projeto" className='logo' />
         </div>
         <ul>
           <li>
