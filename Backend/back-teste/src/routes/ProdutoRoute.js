@@ -7,11 +7,11 @@ class ProdutoRoute {
     this.setupRoutes()
   }
 
-  setupRoutes(){
-    this.app.get('/produto', this.controller.findAll.bind(this.controller))
-    // this.app.post('/produto')
-    // this.app.put('/produto')
-    // this.app.delete('/produto')
+  setupRoutes() {
+    this.app.get('/produto', this.controller.findAll.bind(this.controller));
+    this.app.post('/produto', this.controller.create.bind(this.controller));
+    this.app.put('/produto/:id', this.controller.update.bind(this.controller));
+    this.app.delete('/produto/:id', this.controller.delete.bind(this.controller));
   }
 }
 
