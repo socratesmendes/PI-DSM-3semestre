@@ -17,6 +17,7 @@ class ClienteService {
     }
 
     async create(data) {
+        console.log("service")
         return await this.prisma[this.modelName].create({
             data,
         });

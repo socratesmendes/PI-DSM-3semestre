@@ -28,6 +28,7 @@ class ClienteController {
     async create(req, res) {
         try {
             const novoCliente = req.body;
+            console.log(req.body, "controller");
             const result = await this.service.create(novoCliente);
             res.status(201).send(result);
         } catch (e) {
