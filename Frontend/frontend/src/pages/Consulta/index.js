@@ -96,7 +96,7 @@ function Consulta() {
         <button onClick={handleFormCliente}>Cliente</button>
 
         {formCliente && (
-          <form>
+          <form >
 
             <label>
               Nome:
